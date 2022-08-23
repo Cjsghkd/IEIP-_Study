@@ -31,6 +31,7 @@
 	 		</tr>
 	 		
 	 		<%
+	 		request.setCharacterEncoding("UTF-8");
 	 		Connection conn = null;
 	 		Statement stmt = null;
 	 		String grade="";
@@ -56,7 +57,7 @@
 	 		%>
 	 		
 	 		<tr>
-	 			<td> <%=rs.getString("custno") %> </td>
+	 			<td> <a href="modify.jsp?mod_custno=<%=rs.getString("custno") %>"> <%=rs.getString("custno") %> </a> </td>
 	 			<td> <%=rs.getString("custname") %> </td>
 	 			<td> <%=rs.getString("phone") %> </td>
 	 			<td> <%=rs.getString("address") %> </td>

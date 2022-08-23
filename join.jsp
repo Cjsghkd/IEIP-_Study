@@ -15,6 +15,7 @@
 	<jsp:include page="header.jsp"></jsp:include>
 	
 	<%
+	request.setCharacterEncoding("UTF-8");
 		Connection conn = null;
 			Statement stmt = null; 
 			String custno = "";
@@ -36,7 +37,9 @@
 	<section style="position: fixed; top: 60px; width: 100%; height: 100%; background-color: lightgray">
 	 <h2 style="text-align: center"> <b>홈쇼핑 회원 등록</b> </h2> <br> 
 	 
-	 <form name="frm" style="display: flex; align-items: center; justify-content: center; text-align: center">
+	 <form method="post" action="action.jsp name="frm" style="display: flex; align-items: center; justify-content: center; text-align: center">
+	 
+	 <input type="hidden" name="mode" value="insert">
 	 	
 	 	<table border="1">
 	 		

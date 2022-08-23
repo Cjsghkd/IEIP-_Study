@@ -48,3 +48,7 @@ function success() {
 function search() {
 	window.location = 'list.jsp';
 }
+
+function modify() {
+	alert("회원정보수정이 완료되었습니다!");
+}
