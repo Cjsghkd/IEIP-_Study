@@ -13,6 +13,7 @@
 	request.setCharacterEncoding("UTF-8");
 	
 	Connection conn = null;
+	PreparedStatement pstmt = null;
 	Statement stmt = null; 
 	
 	String mode = request.getParameter("mode");
@@ -33,14 +34,17 @@
 		
 		switch(mode) {
 		case "insert" :
-			sql = "INSERT INTO member_tbl VALUES(" + custno + "," + 
-													"'" + custname + "'," + 
-													"'" + phone + "'," + 
-													"'" + address + "'," + 
-													"TO_DATE('" + joindate + "', 'yyyy-MM-dd')," + 
-													"'" + grade + "'," +
-													"'" + city + "')"; 
-				stmt.executeUpdate(sql);
+			sql = "INSERT INTO member_tbl VALUES(?,?,?,?,?,?,? )"; 
+				pstmt = conn.prepareStatement(sql);
+				pstmt.setString(1, custno);
+				pstmt.setString(2, custname);
+				pstmt.setString(3, phone);
+				pstmt.setString(4, address);
+				pstmt.setString(5, joindate);
+				pstmt.setString(6, grade);
+				pstmt.setString(7, city);
+				
+				pstmt.executeUpdate();
 				%>
 					<jsp:forward page="join.jsp"></jsp:forward>
 				<%
