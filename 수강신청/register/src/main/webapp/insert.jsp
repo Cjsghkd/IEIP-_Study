@@ -14,6 +14,7 @@
 		<h2 style="text-align: center"> <b>교과목 추가</b> </h2>
 		
 		<form method="post" action="action.jsp" name="frm" style="display: flex; align-content: center; justify-content: center">
+		<input type="hidden" name="mode" value="insert">
 			<table border="1" style="text-align: center">
 				<tr>
 					<td>과목코드</td>

@@ -14,7 +14,8 @@
 		<section style="position: fixed; top: 70px; left: 0px; width: 100%; height: 100%; background-color: lightgray">
 		<h2 style="text-align: center"> <b>교과목 수정</b> </h2>
 		
-		<form style="display: flex; align-content: center; justify-content: center; text-align: center">
+		<form method="post" action="action.jsp" name="frm" style="display: flex; align-content: center; justify-content: center; text-align: center">
+		<input type="hidden" name="mode" value="modify">
 			<table border="1">
 				<%
 				String id = request.getParameter("id");
