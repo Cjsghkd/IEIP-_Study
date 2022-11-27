@@ -54,7 +54,7 @@
 							
 							%>
 							 <tr>
-								<td><%=rs.getString(1) %></td>
+								<td><a href="modify.jsp?id=<%=rs.getString(1) %>"><%=rs.getString(1) %></a></td>
 								<td><%=rs.getString(2) %></td>
 								<td><%=rs.getString(3) %></td>
 								<td><%=rs.getString(4) %></td>
@@ -62,7 +62,7 @@
 								<td><%=start %></td>
 								<td><%=end %></td>
 								<td>삭제</td>
-							</tr>
+							 </tr>
 							<%
 						}
 					} catch(Exception e) {
