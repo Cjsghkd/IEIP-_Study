@@ -13,7 +13,8 @@
 	
 	<section style="position: fixed; top: 70px; left: 0px; width: 100%; height: 100%; background-color: lightgray;">
 		<h3 style="text-align: center">카페 메뉴 주문하기</h3>
-		<form  name="frm" style="display: flex; align-content: center; justify-content: center">
+		<form  method="post" action="action.jsp" name="frm" style="display: flex; align-content: center; justify-content: center">
+		<input type="hidden" name="mode" value="insert">
 			<table border="1">
 			
 			<%
@@ -31,7 +32,7 @@
 				</tr>
 				<tr>
 					<td style="text-align: center">고객번호</td>
-					<td><input type="text;" name="custno"></td>
+					<td><input type="text" name="custno"></td>
 				</tr>
 				<tr>
 					<td style="text-align: center">고객이름</td>
