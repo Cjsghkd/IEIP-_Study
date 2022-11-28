@@ -26,12 +26,11 @@
 		PreparedStatement pstmt = con.prepareStatement(sql);
 		ResultSet rs = pstmt.executeQuery();
 		while(rs.next()) {
-			String price = rs.getInt(3) + "원";
 			%>
 				<tr>
 					<td><%=rs.getInt(1) %></td>
 					<td><%=rs.getString(2) %></td>
-					<td><%=price %></td>
+					<td><%=rs.getInt(3) + "원" %></td>
 					<td><%=rs.getString(4) %></td>
 				</tr>
 			<%
