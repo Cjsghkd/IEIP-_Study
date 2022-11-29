@@ -9,7 +9,7 @@
 <body>
 	<jsp:include page="header.jsp"></jsp:include>
 	
-	<section style="postion: fixed; top: 130px; left: 0px; width: 100%; height: 100%; background-color: lightgray;">
+	<section style="position: fixed; top: 130px; left: 0px; width: 100%; height: 100%; background-color: lightgray;">
 		<h3 style="text-align: center">골프연습장 회원관리 프로그램</h3>
 	</section>
 	
