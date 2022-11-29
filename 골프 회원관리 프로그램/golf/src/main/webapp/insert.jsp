@@ -22,7 +22,7 @@
 				<tr>
 					<td style="text-align: center; width: 150p">회원명</td>
 					<td>
-						<select name="c_name">
+						<select name="c_name" onchange="getvalue(this.value)">
 							<option value="">회원명</option>
 							<option value="10001">홍길동</option>
 							<option value="10002">장발장</option>
@@ -34,7 +34,7 @@
 				</tr>
 				<tr>
 					<td style="text-align: center; width: 150p">회원번호</td>
-					<td><input type="text" name="c_no"> 예)10001</td>
+					<td><input type="text" name="c_no" id="c_no" readonly> 예)10001</td>
 				</tr>
 				<tr>
 					<td style="text-align: center; width: 150p">강의장소</td>
@@ -52,7 +52,7 @@
 				<tr>
 					<td style="text-align: center; width: 150p">강의명</td>
 					<td>
-						<select name="class_name">
+						<select name="class_name" onchange="getvalue2(this.value)">
 							<option value="">강의신청</option>
 							<option value="100000">초급반</option>
 							<option value="200000">중급반</option>
@@ -63,7 +63,7 @@
 				</tr>
 				<tr>
 					<td style="text-align: center; width: 150p">수강료</td>
-					<td><input type="text" name="class_price"> 원</td>
+					<td><input type="text" name="class_price" id="class_price" readonly> 원</td>
 				</tr>
 				<tr>
 					<td colspan="2" style="text-align: center">

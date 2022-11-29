@@ -34,3 +34,11 @@ function res() {
 	document.frm.reset();
 	frm.month.focus();
 }
+
+function getvalue(c_no) {
+	document.getElementById('c_no').value = c_no;
+}
+
+function getvalue2(class_price) {
+	document.getElementById('class_price').value = class_price;
+}
