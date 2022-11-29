@@ -37,8 +37,12 @@ function res() {
 
 function getvalue(c_no) {
 	document.getElementById('c_no').value = c_no;
+	c_no2 = c_no;
 }
 
 function getvalue2(class_price) {
-	document.getElementById('class_price').value = class_price;
+	if(c_no2 >= 20000)
+		document.getElementById('class_price').value = class_price / 2;
+	else
+		document.getElementById('class_price').value = class_price;
 }
