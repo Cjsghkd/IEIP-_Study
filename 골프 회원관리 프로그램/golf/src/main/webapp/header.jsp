@@ -11,11 +11,11 @@
 		<h2 style="margin: 0px">골프연습장 회원관리 프로그램 ver 1.0</h2>
 	</header>
 	<nav style="position: fixed; top: 90px; left: 0px; width: 100%; height: 40px; line-height: 40px; background-color: gray; color: white">
-			&nbsp; &nbsp; 강사조회 &nbsp; &nbsp;
-			수강신청 &nbsp; &nbsp;
-			회원정보조회 &nbsp; &nbsp;
-			강사매출현황 &nbsp; &nbsp;
-			홈으로
+			&nbsp; &nbsp; <a href="teacterlist.jsp">강사조회</a> &nbsp; &nbsp;
+			<a href="insert.jsp">수강신청</a> &nbsp; &nbsp;
+			<a href="memberlist.jsp">회원정보조회</a> &nbsp; &nbsp;
+			<a href="sales.jsp">강사매출현황</a> &nbsp; &nbsp;
+			<a href="index.jsp">홈으로</a>
 	</nav>
 </body>
 </html>

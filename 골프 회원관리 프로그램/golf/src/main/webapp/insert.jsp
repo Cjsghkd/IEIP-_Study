@@ -67,7 +67,7 @@
 				</tr>
 				<tr>
 					<td colspan="2" style="text-align: center">
-						<input type="button" value="수강신청" onclick="insertCheck()"> &nbsp; &nbsp;
+						<input type="submit" value="수강신청" onclick="insertCheck()"> &nbsp; &nbsp;
 						<input type="button" value="다시하기" onclick="res()">
 					</td>
 				</tr>
