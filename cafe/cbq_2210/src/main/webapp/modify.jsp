@@ -72,7 +72,7 @@
 				</tr>
 				<tr>
 					<td colspan="2" style="text-align: center">
-						<input type="button" value="주문하기" onclick="orderCheck()"> &nbsp; &nbsp;
+						<input type="button" value="수정하기" onclick="orderCheck()"> &nbsp; &nbsp;
 						<input type="button" value="다시하기" onclick="res()">
 					</td>
 				</tr>

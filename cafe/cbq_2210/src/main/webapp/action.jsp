@@ -17,7 +17,7 @@
 		String custname = request.getParameter("custname");
 		String drink = request.getParameter("drink");
 		String amount = request.getParameter("amount");
-		String date = request.getParameter("orderdate");
+		String orderdate = request.getParameter("orderdate");
 		String mode = request.getParameter("mode");
 		
 		switch(mode) {
@@ -29,7 +29,28 @@
 					pstmt.setString(3, custname);
 					pstmt.setString(4, drink);
 					pstmt.setString(5, amount);
-					pstmt.setString(6, date);
+					pstmt.setString(6, orderdate);
+					pstmt.executeUpdate();
+					%>
+					<jsp:forward page="orderlist.jsp"></jsp:forward>
+					<%
+			case "modify":
+					sql = "update order_tbl2 set custno=?, custname=?, menuno=?, amount=?, orderdate=? where orderno=?";
+					pstmt = con.prepareStatement(sql);
+					pstmt.setString(1, custno);
+					pstmt.setString(2, custname);
+					pstmt.setString(3, drink);
+					pstmt.setString(4, amount);
+					pstmt.setString(5, orderdate);
+					pstmt.setString(6, orderno);
+					pstmt.executeUpdate();
+					%>
+					<jsp:forward page="orderlist.jsp"></jsp:forward>
+					<%
+			case "delete":
+					sql = "delete from order_tbl2 where orderno=?";
+					pstmt = con.prepareStatement(sql);
+					pstmt.setString(1, orderno);
 					pstmt.executeUpdate();
 					%>
 					<jsp:forward page="orderlist.jsp"></jsp:forward>

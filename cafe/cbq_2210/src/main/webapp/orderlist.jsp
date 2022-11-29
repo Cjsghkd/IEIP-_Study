@@ -47,7 +47,7 @@
 								<td><%=price.format(rs.getInt(6)) + "원" %></td>
 								<td><%=rs.getDate(7) %></td>
 								<td><a href="modify.jsp?orderno=<%=rs.getString(1)%>">수정</a></td>
-								<td>삭제</td>
+								<td><a href="action.jsp?orderno=<%=rs.getString(1)%>&mode=delete">삭제</a></td>
 							</tr>
 						<%
 					}
