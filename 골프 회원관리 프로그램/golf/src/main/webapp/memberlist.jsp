@@ -34,13 +34,13 @@
 						DecimalFormat fm = new DecimalFormat("###,###,###");
 						%>
 							<tr>
-								<td><%=date %></td>
-								<td><%=rs.getInt(2) %></td>
-								<td><%=rs.getString(3) %></td>
-								<td><%=rs.getString(4) %></td>
-								<td><%=rs.getString(5) %></td>
-								<td>₩<%=fm.format(rs.getInt(6)) %></td>
-								<td><%=rs.getString(7) %></td>
+								<td style="width: 150px"><%=date %></td>
+								<td style="width: 150px"><%=rs.getInt(2) %></td>
+								<td style="width: 150px"><%=rs.getString(3) %></td>
+								<td style="width: 150px"><%=rs.getString(4) %></td>
+								<td style="width: 150px"><%=rs.getString(5) %></td>
+								<td style="width: 150px">₩<%=fm.format(rs.getInt(6)) %></td>
+								<td style="width: 150px"><%=rs.getString(7) %></td>
 							</tr>
 						<%
 					}

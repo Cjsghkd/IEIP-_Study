@@ -31,11 +31,11 @@
 						String date = rs.getString(5).substring(0,4) + "년" + rs.getString(5).substring(4,6) + "월" + rs.getString(5).substring(6,8) + "일";
 						%>
 						<tr>
-							<td><%=rs.getString(1) %></td>
-							<td><%=rs.getString(2) %></td>
-							<td><%=rs.getString(3) %></td>
-							<td>₩<%=format.format(rs.getInt(4)) %></td>
-							<td><%=date %></td>
+							<td style="width: 150px"><%=rs.getString(1) %></td>
+							<td style="width: 150px"><%=rs.getString(2) %></td>
+							<td style="width: 150px"><%=rs.getString(3) %></td>
+							<td style="width: 150px">₩<%=format.format(rs.getInt(4)) %></td>
+							<td style="width: 150px"><%=date %></td>
 						</tr>
 						<%
 					}

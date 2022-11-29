@@ -16,11 +16,11 @@
 		<form method="post" action="action.jsp" name="frm" style="display: flex; align-content: center; justify-content: center">
 			<table border="1">
 				<tr>
-					<td style="text-align: center">수강월</td>
+					<td style="text-align: center; width: 150px">수강월</td>
 					<td><input type="text" name="month"> 2022년03월 예)202203</td>
 				</tr>
 				<tr>
-					<td style="text-align: center">회원명</td>
+					<td style="text-align: center; width: 150p">회원명</td>
 					<td>
 						<select name="c_name">
 							<option value="">회원명</option>
@@ -33,11 +33,11 @@
 					</td>
 				</tr>
 				<tr>
-					<td style="text-align: center">회원번호</td>
+					<td style="text-align: center; width: 150p">회원번호</td>
 					<td><input type="text" name="c_no"> 예)10001</td>
 				</tr>
 				<tr>
-					<td style="text-align: center">강의장소</td>
+					<td style="text-align: center; width: 150p">강의장소</td>
 					<td>
 						<select name="address">
 							<option value="">강의장소</option>
@@ -50,7 +50,7 @@
 					</td>
 				</tr>
 				<tr>
-					<td style="text-align: center">강의명</td>
+					<td style="text-align: center; width: 150p">강의명</td>
 					<td>
 						<select name="class_name">
 							<option value="">강의신청</option>
@@ -62,7 +62,7 @@
 					</td>
 				</tr>
 				<tr>
-					<td style="text-align: center">수강료</td>
+					<td style="text-align: center; width: 150p">수강료</td>
 					<td><input type="text" name="class_price"> 원</td>
 				</tr>
 				<tr>
