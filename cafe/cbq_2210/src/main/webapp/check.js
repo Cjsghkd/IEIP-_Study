@@ -36,6 +36,12 @@ function orderCheck() {
 	}
 }
 
+function modifyCheck() {
+	alert("수정 완료");
+	document.frm.submit();
+	window.location('orderlist.jsp');
+}
+
 function res() {
 	alert("다시 시작");
 	document.frm.reset();
