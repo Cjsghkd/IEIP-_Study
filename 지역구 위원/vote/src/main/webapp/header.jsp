@@ -12,9 +12,9 @@
 	</header>
 	<nav style="position: fixed; top: 60px; left: 0px; width: 100%; height: 40px; line-height: 40px; background-color: gray; color: white;">
 		&nbsp; <a href="memberlist.jsp">후보조회</a> &nbsp; &nbsp;
-		투표하기 &nbsp; &nbsp;
-		투표검수조회 &nbsp; &nbsp;			
-		후보자등수 &nbsp; &nbsp;
+		<a href="insert.jsp">투표하기</a> &nbsp; &nbsp;
+		<a href="votelist.jsp">투표검수조회</a> &nbsp; &nbsp;			
+		<a href="voterank.jsp">후보자등수</a> &nbsp; &nbsp;
 		<a href="index.jsp">홈으로</a> 
 	</nav>
 </body>
