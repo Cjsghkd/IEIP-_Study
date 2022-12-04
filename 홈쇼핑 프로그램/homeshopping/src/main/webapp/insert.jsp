@@ -14,7 +14,7 @@
 	<section style="position: fixed; top: 100px; left: 0px; width: 100%; height: 100%; background-color: lightgray">
 		<h2 style="text-align: center">홈쇼핑 회원 등록</h2>
 		
-		<form name="frm" style="display: flex; align-content: center; justify-content: center">
+		<form method="post" action="action.jsp" name="frm" style="display: flex; align-content: center; justify-content: center">
 			<table border="1">
 				<tr>
 				<%
