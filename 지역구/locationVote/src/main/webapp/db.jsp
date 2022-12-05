@@ -5,5 +5,5 @@
 	request.setCharacterEncoding("UTF-8");
 	Class.forName("oracle.jdbc.OracleDriver");
 	Connection con = DriverManager.getConnection
-			("jdbc:oracle:thin:@//loaclhost:1521/xe", "system", "0000");
+			("jdbc:oracle:thin:@//localhost:1521/xe", "system", "0000");
 %>
