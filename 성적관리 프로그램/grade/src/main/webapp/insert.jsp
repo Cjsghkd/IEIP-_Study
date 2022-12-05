@@ -12,7 +12,7 @@
 	
 	<section style="position: fixed; top: 80px; left: 0px; width: 100%; height: 100%; background-color: lightgray">
 		<h2 style="text-align: center">성적입력</h2>
-			<form name="frm" style="display: flex; align-content: center; justify-content: center">
+			<form method="post" action="action.jsp" name="frm" style="display: flex; align-content: center; justify-content: center">
 				<table border="1">
 					<tr>
 						<td style="text-align: center">학번</td>
@@ -52,7 +52,7 @@
 					</tr>
 					<tr>
 						<td colspan="2" style="text-align: center">
-							<input type="button" value="등록" onclick="gradeCheck()">
+							<input type="submit" value="등록" onclick="gradeCheck()">
 							<input type="button" value="취소" onclick="res()">
 						</td>
 					</tr>
