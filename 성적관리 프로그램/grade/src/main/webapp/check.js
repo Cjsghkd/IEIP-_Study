@@ -37,3 +37,14 @@ function res() {
 	alert("정보를 지우고 처음부터 다시 입력합니다!");
 	document.frm.reset();
 }
+
+function search() {
+	if (frm2.subcode.value.length == 0) {
+		alert("입력되지않았습니다.");
+		frm.subcode.focus();
+	}
+	else {
+		alert("a");
+		document.frm2.submit();
+	}
+}
