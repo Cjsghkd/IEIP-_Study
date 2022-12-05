@@ -45,7 +45,7 @@
 								<td><%=rs.getString(3) %></td>
 								<td>₩<%=fm.format(rs.getInt(4)) %></td>
 								<td><%=amount %></td>
-								<td><a href=""><%=canborrow %></a></td>
+								<td><a href="bookborrow.jsp"><%=canborrow %></a></td>
 							</tr>
 							<%
 						}
